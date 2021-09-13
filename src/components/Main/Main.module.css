@@ -1,0 +1,139 @@
+.main {
+  display: flex;
+  width: 100%;
+  padding: 0px 20px;
+}
+.main .form {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.main .wrapper {
+  width: 50%;
+  display: flex;
+}
+
+.main .wrapper .listWrapper {
+  width: 49%;
+  margin-right: 2%;
+  padding: 10px 0px;
+}
+.main .wrapper .listWrapper:last-child {
+  margin-right: 0;
+}
+.main .wrapper .listWrapper .label {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  color: #6e757d;
+  font-weight: 600;
+  font-size: 14px;
+}
+.main .wrapper .listWrapper .listContainer {
+  max-height: 400px;
+  overflow: auto;
+}
+.main .wrapper .listWrapper .listContainer .listItem {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.main .wrapper .listWrapper .listContainer .listItem:last-child {
+  margin-bottom: 0;
+}
+.main .wrapper .listWrapper .listContainer .listItem .text {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+}
+.main .wrapper .listWrapper .listContainer .countryListItem {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-color);
+}
+.main .wrapper .listWrapper .listContainer .countryListItem.selected,
+.main .wrapper .listWrapper .listContainer .countryListItem:hover {
+  background-color: var(--tertiary-color);
+}
+.main .wrapper .listWrapper .listContainer .countryListItem .text {
+  width: calc(100% - 25px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.main .wrapper .listWrapper .listContainer .listItem .icon {
+  background-size: cover;
+  width: 30px;
+  height: 20px;
+  margin-left: 5px;
+}
+.countryDetails {
+  padding: 10px 0;
+  margin-left: 30px;
+  width: calc(50% - 30px);
+}
+.countryDetails .countryContinentName {
+  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #424755;
+  letter-spacing: 1.16px;
+  background-color: #eaecf0;
+  border: 1px solid #dadde1;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.countryDetails .countryContinentName span {
+  color: var(--tertiary-color);
+}
+.countryDetails .container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.countryDetails .container .flag {
+  width: 60px;
+  height: 40px;
+  background-size: cover;
+}
+.countryDetails .container .textContainer {
+  margin-left: 20px;
+}
+.countryDetails .container .textContainer .countryName {
+  font-size: 24px;
+  color: #424755;
+}
+.countryDetails .container .textContainer .countryName .isoCode {
+  font-size: 16px;
+  color: #6e757d;
+  margin-left: 5px;
+}
+.countryDetails .container .textContainer .countryName .capital {
+  font-size: 16px;
+}
+.countryDetails .inputContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.countryDetails .inputContainer .input {
+  width: 49%;
+  padding: 10px 20px;
+  border: 1px solid #eaecf0;
+  color: #6e757d;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #eaecf0;
+}
+.countryDetails .inputContainer .input .text {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.countryDetails .inputContainer .input .text:last-child {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #424755;
+}
